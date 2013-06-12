@@ -11,7 +11,7 @@
 body {
 	font-size: 10px;
 	font-family: sans-serif;
-	color: black;
+	background-color: rgb(238, 238, 238);
 }
 
 div {
@@ -36,7 +36,6 @@ header.topbar {
 	padding: .5em 0;
 	text-align: left;
 	margin-bottom: 1em;
-/* 	border: 1px solid black; */
 }
 
 nav.slidebar {
@@ -46,7 +45,6 @@ nav.slidebar {
 	margin-left: -10em;
 	text-align: right;
 	float: left;
-/* 	border: 1px solid black; */
 }
 nav a {
 	display: block;
@@ -62,7 +60,9 @@ nav a:hover {
 .content {
 	font-size: 1.6em;
 	line-height: 2em;
-/* 	border: 1px solid black; */
+	border: 1px solid lightGray;
+	background-color: white;
+	border-radius: 5px;
 }
 
 
