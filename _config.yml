@@ -1,0 +1,9 @@
+# Custom Settings
+title: chuer
+url: chuer.info
+author:
+  name: Xue ChuChu
+  email: xuechuchu@gmail.com
+
+# Basic Settings
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
