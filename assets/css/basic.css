@@ -7,7 +7,7 @@
 *
 * -------------------- */
 
-/* ------- Basic Style ------- */
+/* ------- 基本风格 ------- */
 body {
 	font-size: 10px;
 	font-family: sans-serif;
@@ -27,9 +27,10 @@ a:hover {
 	text-decoration:none;
 }
 
+/* 结构布局 */
 #main {
 	margin: auto;
-	width: 600px;
+	width: 800px;
 }
 
 header.topbar {
@@ -66,4 +67,4 @@ nav a:hover {
 }
 
 
-/* ------- Temp Style ------- */
+/* ------- 临时风格 ------- */
