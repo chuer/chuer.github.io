@@ -12,3 +12,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 JB:
   BASE_PATH: false
   ASSET_PATH: false
+
+  comments:
+    provider: disqus
+    disqus:
+      short_name: Yan

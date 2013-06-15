@@ -37,6 +37,7 @@ header.topbar {
 	padding: .5em 0;
 	text-align: left;
 	margin-bottom: 1em;
+	height: 6em;
 }
 
 nav.slidebar {
@@ -66,5 +67,11 @@ nav a:hover {
 	border-radius: 5px;
 }
 
+.comments {
+	margin-top: 1em;
+	border: 1px solid lightGray;
+	background-color: white;
+	border-radius: 5px;
+}
 
 /* ------- 临时风格 ------- */
