@@ -7,10 +7,14 @@
 *
 * -------------------- */
 
+/* ------- 字体 -------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+
 /* ------- 基本风格 ------- */
 body {
 	font-size: 10px;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: rgb(238, 238, 238);
 }
 
@@ -30,7 +34,7 @@ a:hover {
 /* 结构布局 */
 #main {
 	margin: auto;
-	width: 800px;
+	width: 750px;
 }
 
 header.topbar {
@@ -42,9 +46,10 @@ header.topbar {
 
 nav.slidebar {
 	font-size: 1.5em;
-	font-family: serif;
-	width: 8em;
-	margin-left: -10em;
+	font-family: 'Happy Monkey', serif;
+	text-transform: uppercase;
+	width: 10em;
+	margin-left: -12em;
 	text-align: right;
 	float: left;
 }
