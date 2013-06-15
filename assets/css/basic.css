@@ -31,6 +31,34 @@ a:hover {
 	text-decoration:none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
 /* 头像 */
 img.portrait{
 	height: 10em;
@@ -57,11 +85,10 @@ li.post_item {
 header.topbar {
 	padding: .5em;
 	text-align: center;
-	height: 6em;
+	height: 4em;
 }
 
 .slidebar {
-	font-size: 1.5em;
 	font-family: 'Galdeano', 'Open Sans', serif;
 	text-transform: uppercase;
 	width: 15%;
@@ -79,7 +106,6 @@ header.topbar {
 }
 
 .content {
-	font-size: 1.6em;
 	line-height: 2em;
 }
 
@@ -95,6 +121,10 @@ header.topbar {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1em;
+}
+
+.topbar, .slidebar, .content {
+	font-size: 1.6em;
 }
 
 /* ------- 临时风格 ------- */
