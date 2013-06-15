@@ -8,13 +8,13 @@
 * -------------------- */
 
 /* ------- 字体 -------*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700,600);
+@import url(http://fonts.googleapis.com/css?family=Galdeano);
 
 /* ------- 基本风格 ------- */
 body {
 	font-size: 10px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Galdeano', 'Open Sans', sans-serif;
 	background-color: rgb(238, 238, 238);
 }
 
@@ -33,7 +33,7 @@ a:hover {
 
 /* 头像 */
 img.portrait{
-	height: 12em;
+	height: 10em;
 	width: 10em;
 	border-radius: 100%;
 	float: right;
@@ -42,30 +42,28 @@ img.portrait{
 /* 结构布局 */
 #main {
 	margin: auto;
-	width: 750px;
+	width: 99%;
 }
 
 header.topbar {
 	padding: .5em 0 0 1em;
 	text-align: left;
-	margin-bottom: 1em;
 	height: 6em;
 }
 
-nav.slidebar {
+.slidebar {
 	font-size: 1.5em;
-	font-family: 'Happy Monkey', serif;
+	font-family: 'Galdeano', 'Open Sans', serif;
 	text-transform: uppercase;
-	width: 10em;
-	margin-left: -12em;
+	width: 15%;
 	text-align: right;
 	float: left;
 }
-nav a {
+.slidebar a {
 	display: block;
 	padding: .7em 1em;
 }
-nav a:hover {
+.slidebar a:hover {
 	background-color: #696969;
 	color: #00FFFF;
 	-webkit-transition:color .2s linear;
@@ -81,11 +79,17 @@ nav a:hover {
 }
 
 .comments {
-	margin-top: 1.5em;
 	border: 1px solid lightGray;
 	background-color: white;
 	border-radius: 5px;
 	padding: 1.5em;
+}
+
+.topbar, .comments, .content {
+	width: 63%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
 }
 
 /* ------- 临时风格 ------- */
