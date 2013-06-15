@@ -31,6 +31,14 @@ a:hover {
 	text-decoration:none;
 }
 
+/* 头像 */
+img.portrait{
+	height: 12em;
+	width: 10em;
+	border-radius: 100%;
+	float: right;
+}
+
 /* 结构布局 */
 #main {
 	margin: auto;
@@ -38,7 +46,7 @@ a:hover {
 }
 
 header.topbar {
-	padding: .5em 0;
+	padding: .5em 0 0 1em;
 	text-align: left;
 	margin-bottom: 1em;
 	height: 6em;
@@ -65,7 +73,7 @@ nav a:hover {
 
 .content {
 	font-size: 1.6em;
-	line-height: 1.6em;
+	line-height: 2em;
 	border: 1px solid lightGray;
 	background-color: white;
 	border-radius: 5px;
