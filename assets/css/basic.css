@@ -39,6 +39,15 @@ img.portrait{
 	float: right;
 }
 
+span.post_time {
+	float: right;
+}
+
+li.post_item {
+	list-style: none;
+	border-bottom: 1px solid lightGray;
+}
+
 /* 结构布局 */
 #main {
 	margin: auto;
@@ -72,17 +81,13 @@ header.topbar {
 .content {
 	font-size: 1.6em;
 	line-height: 2em;
+}
+
+.comments, .content {
 	border: 1px solid lightGray;
 	background-color: white;
 	border-radius: 5px;
 	padding: 1em;
-}
-
-.comments {
-	border: 1px solid lightGray;
-	background-color: white;
-	border-radius: 5px;
-	padding: 1.5em;
 }
 
 .topbar, .comments, .content {

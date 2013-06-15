@@ -1,21 +1,23 @@
-{% comment %}<!--
-Collate_posts helper. Collated posts by year and month.
-Usage:
-  1) assign the 'posts_collate' variable to a valid array of posts.
+{% comment %}
+<!--
+Collate_posts 帮助. 根据年月来分类博客.
+用法:
+  1) 分配'posts_collate'变量到博客数组.
   2) include JB/posts_collate
-  example:
+  例子:
     {% assign posts_collate = site.posts %}
     {% include JB/posts_collate %}
 
-  Ordering:
-    Posts are displayed in reverse chronological order.
+  排序:
+    博客以逆时排序方式排列.
     For normal chronological order:
       1) Change the for loop to this:
         => 'for post in site.posts reversed'
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
         
--->{% endcomment %}
+-->
+{% endcomment %}
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
@@ -28,11 +30,10 @@ Usage:
   
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
-      <h3>{{this_month}}</h3>
       <ul>
     {% endif %}
   
-    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li class="post_item"><span class="post_time">{{ post.date | date: "%m/%d/%Y" }}</span> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   
     {% if forloop.last %}
       </ul>
@@ -40,14 +41,7 @@ Usage:
       {% if this_year != next_year %}
         </ul>
         <h2>{{next_year}}</h2>
-        <h3>{{next_month}}</h3>
         <ul>
-      {% else %}    
-        {% if this_month != next_month %}
-          </ul>
-          <h3>{{next_month}}</h3>
-          <ul>
-        {% endif %}
       {% endif %}
     {% endif %}
   {% endfor %}
