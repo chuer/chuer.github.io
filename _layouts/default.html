@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	{% include JB/setup %}
 	<meta charset="utf-8" name="author" content="{{ site.author.name }}">
 	<title>{{ page.title }}</title>
-	<link href="/assets/css/basic.css" rel="stylesheet" type="text/css">
+	<link href="{{ ASSET_PATH }}/css/basic.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="main">
 		<header class="topbar"><h1>{{ page.title }}</h1></header>
 		<nav class="slidebar">
-			<span><a title="home" href="http://chuer.info">主页</a></span>
-			<span><a title="archive" href="http://chuer.info/archive.html">博客</a></span>
-			<span><a title="home" href="http://chuer.info/about.html">关于</a></span>
-			<span><a title="home" href="http://chuer.info/link.html">链接</a></span>
+			<span><a title="home" href="{{ BASE_PATH }}/">主页</a></span>
+			<span><a title="archive" href="{{ BASE_PATH }}/blog.html">博客</a></span>
+			<span><a title="home" href="{{ BASE_PATH }}/about.html">关于</a></span>
+			<span><a title="home" href="{{ BASE_PATH }}/link.html">链接</a></span>
 		</nav>
 		<div class="content">
 			{{ content }}

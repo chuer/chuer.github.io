@@ -7,3 +7,8 @@ author:
 
 # Basic Settings
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+# Jekyll Bootstrap 设定
+JB:
+  BASE_PATH: false
+  ASSET_PATH: false
